@@ -4,6 +4,7 @@ var parser = require('body-parser');
 var session = require('express-session');
 
 app.use(express.static('public'));
+app.use(require('prerender-node').set('prerenderToken', '4O24oWLo5k7KYLoBhAKh'));
 app.use(parser.json())
 
 

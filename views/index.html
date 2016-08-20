@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="mainApp">
+<html ng-app="mainApp" ng-controller="NavCtl">
 
 <head>
+    <meta name="fragment" content="!">
     <meta charset="utf-8">
-    <title ng-bind="metaservice.metaTitle()"></title>
-    <meta name="description" content="test"/>
-    <meta name="keywords" content="{{ metaservice.metaKeywords() }}"/>
+    <title>DigitalERP | {{ seo.pageTitle }}</title>
+    <meta name="description" content="{{ seo.metaDescription }}"/>
+    <meta name="keywords" content="{{ seo.metaKeywords }}"/>
     <link rel="icon" href="img/icon.ico">
     
     <!-- css -->
@@ -31,9 +32,9 @@
 
 </head>
 
-<body ng-controller="NavCtl" onload="initialize()">
+<body onload="initialize()">
     <nav id="header" class="navbar navbar-inverse">
-        <div class="navbar-header">
+        <div class="navbar-header">{{ metaservice.metaDescription() }}
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>

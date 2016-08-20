@@ -487,9 +487,21 @@ img.Image { max-width: 100%;}
   background-size: cover;
   }
 
-.parallax-service-ecommerce {
+.parallax-service-website {
   height: 600px;
   background-image: url("../img/website-developement.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+
+  .parallax-service-ecommerce {
+  height: 600px;
+  background-image: url("../img/e-commerce.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -553,18 +565,4 @@ section.module.parallax-5 {
 }
 section.mid-parallax-fix {
   background-image: url("../img/odoo_silver_partner_rgb.png");
-}
-
-
-
-.logos-container{
-  padding-top: 50px;
-}
-
-.service-content{
-  padding: 25px
-}
-
-.erp-content{
-  padding-top: 10px
 }
