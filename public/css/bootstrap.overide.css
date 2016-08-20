@@ -123,3 +123,10 @@
 .navbar-inverse .navbar-nav>li>a:hover {
     color: black;
 }
+
+.col-sm-3 {
+    width: 20%;
+}
+.col-sm-12 {
+  margin-left: 15px;
+}
